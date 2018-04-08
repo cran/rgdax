@@ -1,11 +1,11 @@
-18b2f1f87d744dbafb5cda37ad7a9651 *DESCRIPTION
+58e3106dfd56ad5363fbe007df753561 *DESCRIPTION
 1d5a823b118f4ed04c21aba6570ed746 *LICENSE
 b3cdb50a8dc59f310449d67a131d1160 *NAMESPACE
-dec199700cebf0bcc263c786b7a3f47e *NEWS.md
+3f80c3131ff7de267939fda6ed59bae8 *NEWS.md
 912464381e4dcbeff7541ef07ed2b2ca *R/account.R
 e744670ffb0e8b8a3ad7a1fca253147f *R/account_hist.R
 cd19800ff63cb43738e80ce512ead960 *R/accounts.R
-d784a1d4ccd02d2719860a87cf548bcc *R/add_order.R
+629656ff66f69fc2ca421be290c3bb14 *R/add_order.R
 39539e0d10f1a98709015e3d83dfd6fb *R/auth.R
 1184260874ef09811e923b0b86a99cb9 *R/cancel_order.R
 0807fd9d19714bd8bb5d13a88fded8fa *R/fills.R
@@ -20,7 +20,7 @@ a1d717db42ecf50abef7655c3ac5ce17 *R/public_info.R
 53aab5c5fe461d132d72007bb9efb66d *R/public_time.R
 d2ab80499584005ef50e49badf6fee14 *R/public_trades.R
 d91593f7eabbf471e2f3653e9d77dd40 *R/pymt_methods.R
-3e3ff15410a9b5e6e264cd6dbe0a8a1e *README.md
+1e742cd1511f0d444bb7d00b77b50d69 *README.md
 c48fba973f882399afe0e2da51e8e666 *man/account.Rd
 f38321e685ac06af7becb0df01e67227 *man/account_hist.Rd
 77f8103f2ad65f05ab6c093b1a1311e5 *man/accounts.Rd
