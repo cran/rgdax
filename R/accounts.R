@@ -36,9 +36,7 @@ accounts <- function(api.key,
   )
 
   #transform----
-  response$balance <- as.numeric(response$balance)
-  response$available <- as.numeric(response$available)
-  response$hold <- as.numeric(response$hold)
+  response <- ldply(response, data.frame)
 
   #return----
   return(response)

@@ -7,28 +7,23 @@
 #'
 #' @return  A named list or a dataframe object of the response.
 #'
+#' @import plyr
 
-parse_response <- function(path, query = NULL) {
+parse_response <- function(path, query = NA) {
   #define api base url----
   api.url <- "https://api.pro.coinbase.com"
 
   #create final end point----
-  url <- modify_url(api.url, path = path, query = query)
+  url <- modify_url(api.url, path = path)
 
   #fetch response----
-  response <- GET(url = url)
+  response <- httr::GET(url = url, query = query)
 
   #validate success----
   if (response$status_code != 200) {
-    content <- fromJSON(content(response,
-                                as = "text"))
-    message <- content$message
     stop(message)
-  } else {
-    content <- fromJSON(content(response,
-                                as = "text"))
   }
 
   #return----
-  return(content)
+  return(response)
 }

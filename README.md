@@ -1,20 +1,19 @@
-# rgdax 1.0.0
+# rgdax 1.2.1
 
-[![Build Status](https://travis-ci.org/DheerajAgarwal/rgdax.png?branch=dev)](https://travis-ci.org/DheerajAgarwal/rgdax)
+[![Build Status](https://www.travis-ci.com/DheerajAgarwal/rgdax.svg?branch=master)](https://www.travis-ci.com/DheerajAgarwal/rgdax)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rgdax)](https://cran.r-project.org/package=rgdax)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/rgdax?color=brightgreen)
 
 ## _*Note:*_   
-The previous version is now *deprecated*. Coinbase had support for the old GDAX API's till end of 2018 only. This new version is likely to break the previous ones and hence, it is recommended that all users should test this out with their existing applications and make changes as necessary.
+The version less than 1.1.0 are now *broken* and *unsupported*. Coinbase had support for the old GDAX API's only till the end of 2018. Version 1.1 and above *WILL* break the previous implementations and hence, it is recommended that all users should test this extensively with their existing applications (bulit pre-March 2021) and make changes as necessary.
 
-This package is inspired by official and unofficial wrappers for [Coinbase Pro API](https://docs.pro.coinbase.com/#api).
-Please read through the api docs to gain a better understanding of how each end point is likely to work.
+This package is inspired by official and unofficial wrappers for [Coinbase Pro API](https://docs.pro.coinbase.com/#api). Please read through the api docs to gain a better understanding of how each end point is likely to work.
 
 There are two main groups of api end points.
 
 **Public:** All functions belonging to this group start with `public_` and can be used without any authentication.
 
-**Auth:** This category of functions will require _API Key_, _API Secret_ and _Passphrase_ to connect successfully to the account. To get your api keys, refer to [how to create Coinbase Pro api keys](https://support.pro.coinbase.com/customer/en/portal/articles/2945320-how-do-i-create-an-api-key-for-coinbase-pro-). The behavior of the functions will also depend upon what kind of access (view, transfer or trade) the api keys have.
+**Auth:** This category of functions will require _API Key_, _API Secret_ and _Passphrase_ to connect successfully to the account. To get your api keys, refer to [how to create Coinbase Pro api keys](https://help.coinbase.com/en/pro/other-topics/api/how-do-i-create-an-api-key-for-coinbase-pro). The behavior of the functions will also depend upon what kind of access (view, transfer or trade) the api keys have.
 
 ## What is New in this version
 
@@ -52,13 +51,14 @@ There are two main groups of api end points.
 |-|-|-|
 |12|add_order|[place a new order](https://docs.pro.coinbase.com/#place-a-new-order)|
 |13|cancel_order|[cancel an order](https://docs.pro.coinbase.com/#cancel-an-order) & [cancel all](https://docs.pro.coinbase.com/#cancel-all)|
+|14|list_orders|[list order](https://docs.pro.coinbase.com/#list-orders)|
 
 **Others**  
 
 |#|function|auth mapping|
 |-|-|-|
-|14|fills|[list fills](https://docs.pro.coinbase.com/#fills)|
-|15|pymt_methods|[list payment methods](https://docs.pro.coinbase.com/#list-payment-methods)|
+|15|fills|[list fills](https://docs.pro.coinbase.com/#fills)|
+|16|pymt_methods|[list payment methods](https://docs.pro.coinbase.com/#list-payment-methods)|
 
 Apart from these two categories, the library also contains a few internal functions which are used across the public and the auth functions:
 
@@ -71,7 +71,6 @@ Apart from these two categories, the library also contains a few internal functi
 
 |#|function|auth mapping|
 |-|-|-|
-|XX|pending|[list order](https://docs.pro.coinbase.com/#list-orders)|
 |XX|pending|[get an order](https://docs.pro.coinbase.com/#get-an-order)|
 
 **Deposits**  
